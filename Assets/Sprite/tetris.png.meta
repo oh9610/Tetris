@@ -44,6 +44,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -66,7 +68,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +77,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -104,17 +109,41 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tetris_0
+      name: tetris_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 716
-        width: 24
-        height: 24
+        x: 178
+        y: 714
+        width: 12
+        height: 12
       alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,34 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015f1755891772410800000000000000
-      internalID: 1452254303932773648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tetris_1
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 714
-        width: 36
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -18, y: 12}
-        - {x: -18, y: -12}
-        - {x: 18, y: -12}
-        - {x: 18, y: 0}
-        - {x: -6, y: 0}
-        - {x: -6, y: 12}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0f06fdae09225410800000000000000
+      spriteID: 956aa74f43d7b1e4a9e6acc254148071
       internalID: 1464277971873697548
       vertices: []
       indices: 
@@ -162,15 +164,15 @@ TextureImporter:
         x: 311
         y: 702
         width: 12
-        height: 48
-      alignment: 0
+        height: 12
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4354e1a5239223120800000000000000
+      spriteID: ee4da2f9139be254481bbaf718fd6f49
       internalID: 2392019648324191540
       vertices: []
       indices: 
@@ -181,25 +183,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 707
-        width: 36
-        height: 24
-      alignment: 0
+        y: 719
+        width: 12
+        height: 12
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -18, y: 12}
-        - {x: -18, y: 0}
-        - {x: -6, y: 0}
-        - {x: -6, y: -12}
-        - {x: 18, y: -12}
-        - {x: 18, y: 0}
-        - {x: 6, y: 0}
-        - {x: 6, y: 12}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76074f4fcd111e530800000000000000
+      spriteID: 4c810014d6f7c414cbb93c217efdf77c
       internalID: 3882403994470215783
       vertices: []
       indices: 
@@ -211,24 +205,16 @@ TextureImporter:
         serializedVersion: 2
         x: 548
         y: 712
-        width: 36
-        height: 24
-      alignment: 0
+        width: 12
+        height: 12
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: 12}
-        - {x: -6, y: 0}
-        - {x: -18, y: 0}
-        - {x: -18, y: -12}
-        - {x: 18, y: -12}
-        - {x: 18, y: 0}
-        - {x: 6, y: 0}
-        - {x: 6, y: 12}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c218b4b748e1fb10800000000000000
+      spriteID: 685d91090d06d9d47b7e434f9199e77b
       internalID: 2013645903083606729
       vertices: []
       indices: 
@@ -240,24 +226,16 @@ TextureImporter:
         serializedVersion: 2
         x: 52
         y: 581
-        width: 36
-        height: 24
-      alignment: 0
+        width: 12
+        height: 12
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: 12}
-        - {x: -6, y: 0}
-        - {x: -18, y: 0}
-        - {x: -18, y: -12}
-        - {x: 6, y: -12}
-        - {x: 6, y: 0}
-        - {x: 18, y: 0}
-        - {x: 18, y: 12}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be1088688600bd70800000000000000
+      spriteID: 20bdc460c9a4d584a8fd1c597df9df69
       internalID: 9056746033580613296
       vertices: []
       indices: 
@@ -269,23 +247,38 @@ TextureImporter:
         serializedVersion: 2
         x: 177
         y: 585
-        width: 36
-        height: 24
-      alignment: 0
+        width: 12
+        height: 12
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 12}
-        - {x: 6, y: 0}
-        - {x: -18, y: 0}
-        - {x: -18, y: -12}
-        - {x: 18, y: -12}
-        - {x: 18, y: 12}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99c0696e7940eb780800000000000000
+      spriteID: c67ea8a5695deda49855aeb2d9618d62
       internalID: -8665483582559089511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetris_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 728
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea906aa7969c26c42ba723f6a6680b7f
+      internalID: -409471129
       vertices: []
       indices: 
       edges: []
@@ -300,6 +293,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tetris_7: 549771608
+      tetris_1: 1464277971873697548
+      tetris_3: 3882403994470215783
+      tetris_5: 9056746033580613296
+      tetris_9: -1189442148
+      tetris_10: 1092127879
+      tetris_8: -409471129
+      tetris_6: -8665483582559089511
+      tetris_0: 1452254303932773648
+      tetris_4: 2013645903083606729
+      tetris_2: 2392019648324191540
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
